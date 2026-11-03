@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Pepper Almanac",
+      "hasCanvas": false,
+      "bodyTextLen": 14968,
+      "bodyTextHash": "08028ef565575da9c9da80e1cf2b1e06b3562d91e6fa14d6f15ae9be4e5bab6d",
+      "bodyTextPrefix": "The Pepper Almanac Season Grow Seed A FIELD GUIDE TO CAPSICUM Gr",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Pepper Almanac",
+      "hasCanvas": false,
+      "bodyTextLen": 14968,
+      "bodyTextHash": "08028ef565575da9c9da80e1cf2b1e06b3562d91e6fa14d6f15ae9be4e5bab6d",
+      "bodyTextPrefix": "The Pepper Almanac Season Grow Seed A FIELD GUIDE TO CAPSICUM Gr",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
