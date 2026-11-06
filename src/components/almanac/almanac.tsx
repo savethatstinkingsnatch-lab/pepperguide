@@ -4,8 +4,21 @@ import { summers, varietyById, zoneById, zones } from "@/data/content";
 import { formatMonthDay, summerHint } from "@/lib/season";
 import { usePrefs } from "@/lib/prefs";
 import { GrowPanel } from "@/components/almanac/grow-panel";
+import { BackPages, SafetyPages, StartHere } from "@/components/almanac/reference-pages";
 import { SeasonPanel } from "@/components/almanac/season-panel";
 import { SeedPanel } from "@/components/almanac/seed-panel";
+
+const links = [
+  ["#start", "Start"],
+  ["#season", "Season"],
+  ["#grow", "Grow"],
+  ["#seed", "Seed"],
+  ["#safety", "Safety"],
+  ["#store", "Store"],
+  ["#lookalikes", "Look-alikes"],
+  ["#glossary", "Glossary"],
+  ["#about", "About"],
+] as const;
 
 export function Almanac() {
   const prefs = usePrefs();
@@ -21,21 +34,23 @@ export function Almanac() {
     <div className="min-h-screen bg-parchment text-ink">
       <div className="h-1 bg-chile" />
       <header className="sticky top-0 z-30 border-b border-line bg-parchment">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-          <a href="#top" className="flex min-h-11 items-center gap-2">
-            <Leaf className="size-5 text-leaf" aria-hidden="true" />
-            <span className="font-display text-lg font-semibold tracking-tight">The Pepper Almanac</span>
-          </a>
-          <nav className="flex items-center gap-1 text-sm font-semibold sm:gap-3" aria-label="Guide">
-            <a className="inline-flex min-h-11 items-center px-2 hover:text-chile-ink" href="#season">
-              Season
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="flex items-center py-3">
+            <a href="#top" className="flex min-h-11 items-center gap-2">
+              <Leaf className="size-5 text-leaf" aria-hidden="true" />
+              <span className="font-display text-lg font-semibold tracking-tight">The Pepper Almanac</span>
             </a>
-            <a className="inline-flex min-h-11 items-center px-2 hover:text-chile-ink" href="#grow">
-              Grow
-            </a>
-            <a className="inline-flex min-h-11 items-center px-2 hover:text-chile-ink" href="#seed">
-              Seed
-            </a>
+          </div>
+          <nav className="-mx-4 flex gap-1 overflow-x-auto px-4 pb-3" aria-label="Guide">
+            {links.map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                className="inline-flex min-h-11 shrink-0 items-center px-3 text-sm font-semibold hover:text-chile-ink"
+              >
+                {label}
+              </a>
+            ))}
           </nav>
         </div>
       </header>
@@ -43,10 +58,11 @@ export function Almanac() {
       <main id="top" className="mx-auto max-w-6xl px-4 pt-10 pb-20 sm:pt-14">
         <section className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-chile-ink uppercase">
-              A field guide to Capsicum
+            <p className="max-w-xl text-lg font-semibold text-ink">
+              The Education Revolution Pocket Guide, Volume 18: Peppers
             </p>
-            <h1 className="mt-3 text-5xl leading-tight font-semibold text-ink sm:text-6xl">
+            <p className="mt-1 text-base text-muted">by Blue and the Awesome Dudes</p>
+            <h1 className="mt-4 text-5xl leading-tight font-semibold text-ink sm:text-6xl">
               Grow peppers that ripen where you live.
             </h1>
             <p className="mt-4 max-w-xl text-lg text-muted">
@@ -126,22 +142,18 @@ export function Almanac() {
               <dl className="mt-4 grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <dt className="text-muted">Typical last spring frost</dt>
-                  <dd className="mt-1 font-semibold tabular-nums">
-                    {formatMonthDay(zone.lastFrost, "None")}
-                  </dd>
+                  <dd className="mt-1 font-semibold tabular-nums">{formatMonthDay(zone.lastFrost, "None")}</dd>
                 </div>
                 <div>
                   <dt className="text-muted">Typical first fall frost</dt>
-                  <dd className="mt-1 font-semibold tabular-nums">
-                    {formatMonthDay(zone.firstFrost, "None")}
-                  </dd>
+                  <dd className="mt-1 font-semibold tabular-nums">{formatMonthDay(zone.firstFrost, "None")}</dd>
                 </div>
               </dl>
               <p className="mt-4 text-ink">{zone.blurb}</p>
             </div>
           </div>
 
-          <figure className="overflow-hidden rounded-2xl border border-line bg-paper lg:sticky lg:top-24">
+          <figure className="overflow-hidden rounded-2xl border border-line bg-paper lg:sticky lg:top-32">
             <img
               src="/guide/hero.jpg"
               alt="Ripe bell, cayenne, jalapeño, and habanero peppers with a bowl of saved seeds"
@@ -152,6 +164,10 @@ export function Almanac() {
             </figcaption>
           </figure>
         </section>
+
+        <div className="mt-20">
+          <StartHere />
+        </div>
 
         <div className="mt-20">
           <SeasonPanel
@@ -181,12 +197,24 @@ export function Almanac() {
           />
         </div>
 
+        <div className="mt-20">
+          <SafetyPages />
+        </div>
+
+        <div className="mt-20">
+          <BackPages />
+        </div>
+
         <footer className="mt-16 border-t border-line pt-6 text-sm text-muted">
           <p>
             Frost dates are planning midpoints for each USDA zone, not a local forecast. Days to ripe color
             start at transplant and stretch when summers stay cool. Seed notes here are for a home garden,
             not certified seed production. A zone number does not describe summer heat — a cool zone 8 and a
             hot zone 8 are different pepper seasons.
+          </p>
+          <p className="mt-3">
+            Privacy: This guide does not collect your name, email, or any personal information. Your zone
+            choice is saved only on your own device.
           </p>
         </footer>
       </main>

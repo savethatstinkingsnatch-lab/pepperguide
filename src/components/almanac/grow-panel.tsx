@@ -10,7 +10,7 @@ const icons = {
 
 export function GrowPanel() {
   return (
-    <section id="grow" className="scroll-mt-24">
+    <section id="grow" className="scroll-mt-32">
       <p className="text-xs font-semibold tracking-widest text-chile-ink uppercase">In the ground</p>
       <h2 className="mt-2 max-w-2xl text-4xl font-semibold text-ink">How a pepper season actually goes</h2>
       <p className="mt-3 max-w-2xl text-lg text-muted">

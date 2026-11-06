@@ -364,11 +364,11 @@ export const growChapters: GrowChapter[] = [
     id: "sow",
     kicker: "01 — Indoors",
     title: "Start seed warm, then give it light the same day",
-    lead: "Peppers fail more often on a cold windowsill than they do in the ground. Germination wants heat. Everything after wants light.",
+    lead: "Peppers fail more often on a cold windowsill than they do in the ground. Germination wants heat. Everything after wants light. See also Volume 7: Tomatoes for seed starting, hardening off, and hornworms.",
     points: [
       {
         title: "Sow a quarter-inch deep",
-        body: "Use a fine, sterile mix in clean cells. Old, damp seed is the usual reason a tray stays empty. Pepper seed keeps two to five years if it was dried hard and stored cool — test a pinch of anything older before you bet the season on it.",
+        body: "Start most peppers indoors 8 to 10 weeks before your last frost. Habaneros, ajíes, rocotos, and superhots need 10 to 14 weeks. Use a fine, sterile mix in clean cells. Old, damp seed is the usual reason a tray stays empty. Pepper seed keeps two to five years if it was dried hard and stored cool — test a pinch of anything older before you bet the season on it.",
       },
       {
         title: "Hold the mix at 80–85°F",
@@ -396,7 +396,7 @@ export const growChapters: GrowChapter[] = [
       },
       {
         title: "Plant when nights hold above 55°F",
-        body: "Soil should be at least 60°F. In a cool summer, wait longer and use black mulch or a south-facing wall. In a hot climate, don't wait so long that the plants are still tiny when days hit 95°F.",
+        body: "Soil should be at least 65°F. Use a cheap soil thermometer 4 inches deep. In a cool summer, wait longer and use black mulch or a south-facing wall. In a hot climate, don't wait so long that the plants are still tiny when days hit 95°F.",
       },
       {
         title: "Set them level, then stake",
@@ -436,7 +436,7 @@ export const growChapters: GrowChapter[] = [
     id: "trouble",
     kicker: "04 — Troubles",
     title: "The short list of things that actually go wrong",
-    lead: "Ignore folklore sprays. These are the problems worth knowing before you save seed from a sick plant.",
+    lead: "Ignore folklore sprays. These are the problems worth knowing before you save seed from a sick plant. See also Volume 7: Tomatoes for seed starting, hardening off, and hornworms.",
     points: [
       {
         title: "Aphids, mites, hornworms",
@@ -462,7 +462,7 @@ export const seedSteps: { id: string; title: string; body: string }[] = [
   {
     id: "op",
     title: "Save from a plant that can come true",
-    body: "Open-pollinated and heirloom peppers repeat themselves if the flower met the right pollen. An F1 hybrid will grow, but its children split into a mix of the parents. If the packet says F1, eat the fruit and buy fresh seed. Grocery-store peppers are often hybrids, and they can carry disease. Known seed is a better start.",
+    body: "Open-pollinated and heirloom peppers repeat themselves if the flower met the right pollen. An F1 hybrid will grow, but its children split into a mix of the parents. If the packet says F1, eat the fruit and buy fresh seed. Grocery-store peppers are often hybrids, and they can carry disease. Known seed is a better start. All the varieties in this almanac are usually sold as open-pollinated, but some seed companies sell hybrid versions. Check that the packet says OP or heirloom, not F1.",
   },
   {
     id: "healthy",
@@ -472,7 +472,7 @@ export const seedSteps: { id: string; title: string; body: string }[] = [
   {
     id: "isolate",
     title: "Decide how true the seed needs to be",
-    body: "Peppers mostly self-pollinate, and bees still move pollen. For sauce you will eat next year, a little crossing is a story. For seed you want to share, or a variety you love as it is, isolate. The sure home method is a small organza bag over a cluster of buds that have not opened, a clean brush to move pollen inside the bag, and yarn on that fruit so you don't mix it with open-pollinated pods at harvest. Growing only one variety of that species this year works too. Distance alone is wishful on a small lot — bees work the whole block.",
+    body: "Peppers mostly self-pollinate, and bees still move pollen. For sauce you will eat next year, a little crossing is a story. For seed you want to share, or a variety you love as it is, isolate. The sure home method is a small organza bag over a cluster of buds that have not opened, a clean brush to move pollen inside the bag, and yarn on that fruit so you don't mix it with open-pollinated pods at harvest. Growing only one variety of that species this year works too. If you want to use distance instead of bags, a common guideline is 300 to 500 feet between varieties of the same species, and even that is not a guarantee. On a small lot, bees work the whole block, so bags are safer. Peppers cross more easily than tomatoes.",
   },
   {
     id: "ripen",

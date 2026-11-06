@@ -12,7 +12,7 @@ var install_page_default = "<!DOCTYPE html>\n<html lang=\"en\" class=\"device-de
 //#endregion
 //#region \0virtual:grok-og-identity
 var grokOgIdentity = { "site": {
-	"title": "The Pepper Almanac",
+	"title": "Peppers: The Pepper Almanac",
 	"card": "custom",
 	"image": "/og.jpg"
 } };

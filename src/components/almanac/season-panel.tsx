@@ -48,7 +48,7 @@ export function SeasonPanel({
   });
 
   return (
-    <section id="season" className="scroll-mt-24">
+    <section id="season" className="scroll-mt-32">
       <p className="text-xs font-semibold tracking-widest text-chile-ink uppercase">The season</p>
       <h2 className="mt-2 max-w-2xl text-4xl font-semibold text-ink">When this pepper actually finishes</h2>
       <p className="mt-3 max-w-2xl text-lg text-muted">
@@ -60,7 +60,9 @@ export function SeasonPanel({
         <article className="rounded-2xl border border-line bg-paper p-5 sm:p-7">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
-              <h3 className="text-3xl font-semibold text-ink">{variety.name}</h3>
+              <h3 className="text-3xl font-semibold text-ink">
+                {variety.name} <span className="text-lg font-semibold text-leaf">OP</span>
+              </h3>
               <p className="mt-1 text-sm text-muted">
                 {heatLabels[variety.heat]} · {variety.shu} SHU · {variety.days} days from transplant
               </p>
@@ -139,7 +141,9 @@ export function SeasonPanel({
                   >
                     <span className="flex items-start justify-between gap-3">
                       <span>
-                        <span className="block font-display text-xl font-semibold text-ink">{item.name}</span>
+                        <span className="block font-display text-xl font-semibold text-ink">
+                          {item.name} <span className="text-sm font-semibold text-leaf">OP</span>
+                        </span>
                         <span className="mt-1 block text-sm text-muted">
                           {heatLabels[item.heat]} · ripens {item.ripe.toLowerCase()} · {item.days} days
                         </span>

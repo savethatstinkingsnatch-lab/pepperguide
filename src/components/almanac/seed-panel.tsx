@@ -49,7 +49,7 @@ export function SeedPanel({
   }
 
   return (
-    <section id="seed" className="scroll-mt-24">
+    <section id="seed" className="scroll-mt-32">
       <p className="text-xs font-semibold tracking-widest text-chile-ink uppercase">Harvest the seed</p>
       <h2 className="mt-2 max-w-2xl text-4xl font-semibold text-ink">
         Seed worth sowing is ripe, dry, and named

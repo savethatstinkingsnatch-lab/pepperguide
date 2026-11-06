@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Droplets, c as Bug, i as Leaf, n as Sun, o as Copy, r as Sprout, s as Check } from "../_libs/lucide-react.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-D2bJaPo3.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CpI9m2i_.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var summers = [
@@ -356,11 +356,11 @@ var growChapters = [
 		id: "sow",
 		kicker: "01 — Indoors",
 		title: "Start seed warm, then give it light the same day",
-		lead: "Peppers fail more often on a cold windowsill than they do in the ground. Germination wants heat. Everything after wants light.",
+		lead: "Peppers fail more often on a cold windowsill than they do in the ground. Germination wants heat. Everything after wants light. See also Volume 7: Tomatoes for seed starting, hardening off, and hornworms.",
 		points: [
 			{
 				title: "Sow a quarter-inch deep",
-				body: "Use a fine, sterile mix in clean cells. Old, damp seed is the usual reason a tray stays empty. Pepper seed keeps two to five years if it was dried hard and stored cool — test a pinch of anything older before you bet the season on it."
+				body: "Start most peppers indoors 8 to 10 weeks before your last frost. Habaneros, ajíes, rocotos, and superhots need 10 to 14 weeks. Use a fine, sterile mix in clean cells. Old, damp seed is the usual reason a tray stays empty. Pepper seed keeps two to five years if it was dried hard and stored cool — test a pinch of anything older before you bet the season on it."
 			},
 			{
 				title: "Hold the mix at 80–85°F",
@@ -388,7 +388,7 @@ var growChapters = [
 			},
 			{
 				title: "Plant when nights hold above 55°F",
-				body: "Soil should be at least 60°F. In a cool summer, wait longer and use black mulch or a south-facing wall. In a hot climate, don't wait so long that the plants are still tiny when days hit 95°F."
+				body: "Soil should be at least 65°F. Use a cheap soil thermometer 4 inches deep. In a cool summer, wait longer and use black mulch or a south-facing wall. In a hot climate, don't wait so long that the plants are still tiny when days hit 95°F."
 			},
 			{
 				title: "Set them level, then stake",
@@ -428,7 +428,7 @@ var growChapters = [
 		id: "trouble",
 		kicker: "04 — Troubles",
 		title: "The short list of things that actually go wrong",
-		lead: "Ignore folklore sprays. These are the problems worth knowing before you save seed from a sick plant.",
+		lead: "Ignore folklore sprays. These are the problems worth knowing before you save seed from a sick plant. See also Volume 7: Tomatoes for seed starting, hardening off, and hornworms.",
 		points: [
 			{
 				title: "Aphids, mites, hornworms",
@@ -453,7 +453,7 @@ var seedSteps = [
 	{
 		id: "op",
 		title: "Save from a plant that can come true",
-		body: "Open-pollinated and heirloom peppers repeat themselves if the flower met the right pollen. An F1 hybrid will grow, but its children split into a mix of the parents. If the packet says F1, eat the fruit and buy fresh seed. Grocery-store peppers are often hybrids, and they can carry disease. Known seed is a better start."
+		body: "Open-pollinated and heirloom peppers repeat themselves if the flower met the right pollen. An F1 hybrid will grow, but its children split into a mix of the parents. If the packet says F1, eat the fruit and buy fresh seed. Grocery-store peppers are often hybrids, and they can carry disease. Known seed is a better start. All the varieties in this almanac are usually sold as open-pollinated, but some seed companies sell hybrid versions. Check that the packet says OP or heirloom, not F1."
 	},
 	{
 		id: "healthy",
@@ -463,7 +463,7 @@ var seedSteps = [
 	{
 		id: "isolate",
 		title: "Decide how true the seed needs to be",
-		body: "Peppers mostly self-pollinate, and bees still move pollen. For sauce you will eat next year, a little crossing is a story. For seed you want to share, or a variety you love as it is, isolate. The sure home method is a small organza bag over a cluster of buds that have not opened, a clean brush to move pollen inside the bag, and yarn on that fruit so you don't mix it with open-pollinated pods at harvest. Growing only one variety of that species this year works too. Distance alone is wishful on a small lot — bees work the whole block."
+		body: "Peppers mostly self-pollinate, and bees still move pollen. For sauce you will eat next year, a little crossing is a story. For seed you want to share, or a variety you love as it is, isolate. The sure home method is a small organza bag over a cluster of buds that have not opened, a clean brush to move pollen inside the bag, and yarn on that fruit so you don't mix it with open-pollinated pods at harvest. Growing only one variety of that species this year works too. If you want to use distance instead of bags, a common guideline is 300 to 500 feet between varieties of the same species, and even that is not a guarantee. On a small lot, bees work the whole block, so bags are safer. Peppers cross more easily than tomatoes."
 	},
 	{
 		id: "ripen",
@@ -670,7 +670,7 @@ var icons = {
 function GrowPanel() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "grow",
-		className: "scroll-mt-24",
+		className: "scroll-mt-32",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
@@ -755,6 +755,231 @@ function GrowPanel() {
 		]
 	});
 }
+var startSteps = [
+	"Pick your zone and summer type.",
+	"Choose 2 or 3 varieties marked OP.",
+	"Start seed indoors 8 to 10 weeks before last frost, on a heat mat, under lights.",
+	"Plant out when nights stay above 55°F.",
+	"Water evenly.",
+	"Wear gloves for hot ones.",
+	"For seed, let fruit fully ripen and grow only one variety of each species, or bag the flowers."
+];
+var safetyNotes = [
+	"Wear gloves when cutting hot peppers. Never touch your eyes, nose, or face. Wash knives and boards with soap.",
+	"Skin burn: Water alone spreads the oil. Wash with dish soap, or rub on cooking oil and then wash with soap. Soaking in cold milk can soothe it.",
+	"Eyes: Flush with clean, cool water for several minutes. Take out contact lenses. Get medical help if pain does not go away.",
+	"Mouth: Drink milk or eat yogurt, not water.",
+	"Fumes: Roast, fry, or dehydrate very hot peppers outdoors or with strong airflow. The fumes can make you cough and sting your eyes. Keep children and pets away.",
+	"Keep hot peppers and seeds away from small children and pets."
+];
+var storageNotes = [
+	"Peppers or garlic in oil can grow botulism. Make it fresh, keep it in the refrigerator, and use it within a few days, or freeze it. Never store it at room temperature.",
+	"Dried peppers: Dry them until they are brittle. Store them in sealed jars. Throw out any with mold, fuzz, or a musty smell.",
+	"Freezing: Wash, cut, and freeze peppers. No blanching is needed."
+];
+var lookalikes = [
+	"Jerusalem cherry (Solanum pseudocapsicum) is a houseplant with round orange-red berries that looks like a pepper plant. It is POISONOUS. Do not eat it.",
+	"Ornamental peppers sold as decorations are usually edible but often very hot, and they are bred for looks, not flavor. Do not eat any that were sprayed with plant chemicals not meant for food.",
+	"Pepper leaves are eaten cooked in some Asian dishes, but only cooked, and this guide does not recommend eating them. Do not eat raw leaves, stems, or flowers."
+];
+var glossary = [
+	{
+		term: "Capsaicin",
+		meaning: "the oily chemical that makes peppers hot."
+	},
+	{
+		term: "SHU (Scoville Heat Units)",
+		meaning: "a heat rating."
+	},
+	{
+		term: "Species",
+		meaning: "annuum, chinense, baccatum, frutescens, pubescens."
+	},
+	{
+		term: "Open-pollinated (OP)",
+		meaning: "grows true from saved seed."
+	},
+	{
+		term: "F1 hybrid",
+		meaning: "a cross. Saved seed won't grow true."
+	},
+	{
+		term: "Isolation",
+		meaning: "keeping varieties apart so they don't cross."
+	},
+	{
+		term: "Hardening off",
+		meaning: "getting seedlings used to the outdoors slowly."
+	},
+	{
+		term: "Blossom-end rot",
+		meaning: "a dark sunken spot on the bottom of the fruit from uneven water."
+	},
+	{
+		term: "Sunscald",
+		meaning: "pale burned patches on the fruit."
+	},
+	{
+		term: "Pith",
+		meaning: "the white inside where most of the heat lives."
+	}
+];
+function Page({ id, kicker, title, children }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		id,
+		className: "scroll-mt-32",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
+				children: kicker
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				className: "mt-2 max-w-2xl text-4xl font-semibold text-ink",
+				children: title
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mt-6",
+				children
+			})
+		]
+	});
+}
+function Notes({ items }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+		className: "grid gap-3",
+		children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+			className: "rounded-2xl border border-line bg-paper p-4 text-ink sm:p-5",
+			children: item
+		}, item))
+	});
+}
+function StartHere() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, {
+		id: "start",
+		kicker: "Start here",
+		title: "New to peppers?",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+			className: "grid gap-3",
+			children: startSteps.map((step, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+				className: "rounded-2xl border border-line bg-paper p-4 sm:p-5",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+					className: "mr-2 font-semibold text-chile-ink tabular-nums",
+					children: [index + 1, "."]
+				}), step]
+			}, step))
+		})
+	});
+}
+function SafetyPages() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, {
+			id: "safety",
+			kicker: "Safety",
+			title: "Hot pepper safety",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Notes, { items: safetyNotes })
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "mt-20",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, {
+				id: "store",
+				kicker: "After harvest",
+				title: "Storing peppers safely",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+					className: "grid gap-3",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+						className: "rounded-2xl border border-line bg-paper p-4 text-ink sm:p-5",
+						children: [
+							"Canning: Peppers are low-acid. Plain peppers MUST be pressure-canned. You can also pickle them with a tested recipe from the",
+							" ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								className: "font-semibold text-chile-ink underline decoration-line underline-offset-2",
+								href: "https://nchfp.uga.edu/",
+								target: "_blank",
+								rel: "noreferrer",
+								children: "National Center for Home Food Preservation"
+							}),
+							" ",
+							"(nchfp.uga.edu). Never water-bath can plain peppers."
+						]
+					}), storageNotes.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+						className: "rounded-2xl border border-line bg-paper p-4 text-ink sm:p-5",
+						children: item
+					}, item))]
+				})
+			})
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "mt-20",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				id: "lookalikes",
+				className: "scroll-mt-32 rounded-2xl border-2 border-chile bg-paper p-5 sm:p-8",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
+						children: "Look-alikes"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "mt-2 text-3xl font-semibold text-ink",
+						children: "Not every red berry is a pepper"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+						className: "mt-5 grid gap-4",
+						children: lookalikes.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+							className: "border-t border-line pt-4 text-ink",
+							children: item
+						}, item))
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "mt-5 font-semibold text-ink",
+						children: [
+							"Poison Control:",
+							" ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								className: "text-chile-ink underline decoration-line underline-offset-2",
+								href: "tel:18002221222",
+								children: "1-800-222-1222"
+							})
+						]
+					})
+				]
+			})
+		})
+	] });
+}
+function BackPages() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, {
+		id: "glossary",
+		kicker: "Words",
+		title: "Glossary",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dl", {
+			className: "grid gap-3 sm:grid-cols-2",
+			children: glossary.map((entry) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "rounded-2xl border border-line bg-paper p-4",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+					className: "font-display text-xl font-semibold text-ink",
+					children: entry.term
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+					className: "mt-1 text-muted",
+					children: entry.meaning
+				})]
+			}, entry.term))
+		})
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "mt-20",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, {
+			id: "about",
+			kicker: "About",
+			title: "About and disclaimer",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "rounded-2xl border border-line bg-paper p-5 sm:p-7",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-ink",
+					children: "This pocket guide is for learning. Check your local county extension office for advice in your area. Follow tested recipes from the National Center for Home Food Preservation when you can. Blue and the Awesome Dudes are not responsible for illness, injury, or crop loss. Part of The Education Revolution pocket guide series."
+				})
+			})
+		})
+	})] });
+}
 var heats = [
 	"all",
 	"sweet",
@@ -782,7 +1007,7 @@ function SeasonPanel({ zone, summer, variety, fitsOnly, heat, onVariety, onFitsO
 	});
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "season",
-		className: "scroll-mt-24",
+		className: "scroll-mt-32",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
@@ -803,9 +1028,16 @@ function SeasonPanel({ zone, summer, variety, fitsOnly, heat, onVariety, onFitsO
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex flex-wrap items-start justify-between gap-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
 								className: "text-3xl font-semibold text-ink",
-								children: variety.name
+								children: [
+									variety.name,
+									" ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-lg font-semibold text-leaf",
+										children: "OP"
+									})
+								]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 								className: "mt-1 text-sm text-muted",
 								children: [
@@ -893,9 +1125,16 @@ function SeasonPanel({ zone, summer, variety, fitsOnly, heat, onVariety, onFitsO
 							className: `w-full rounded-2xl border p-4 text-left transition-colors ${selected ? "border-chile bg-paper" : "border-line bg-paper hover:border-chile"}`,
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 								className: "flex items-start justify-between gap-3",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 									className: "block font-display text-xl font-semibold text-ink",
-									children: item.name
+									children: [
+										item.name,
+										" ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-sm font-semibold text-leaf",
+											children: "OP"
+										})
+									]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 									className: "mt-1 block text-sm text-muted",
 									children: [
@@ -1004,7 +1243,7 @@ function SeedPanel({ zone, variety, method, checks, onMethod, onToggle }) {
 	}
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "seed",
-		className: "scroll-mt-24",
+		className: "scroll-mt-32",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
@@ -1197,6 +1436,17 @@ function SeedPanel({ zone, variety, method, checks, onMethod, onToggle }) {
 		]
 	});
 }
+var links = [
+	["#start", "Start"],
+	["#season", "Season"],
+	["#grow", "Grow"],
+	["#seed", "Seed"],
+	["#safety", "Safety"],
+	["#store", "Store"],
+	["#lookalikes", "Look-alikes"],
+	["#glossary", "Glossary"],
+	["#about", "About"]
+];
 function Almanac() {
 	const prefs = usePrefs();
 	(0, import_react.useEffect)(() => {
@@ -1211,37 +1461,28 @@ function Almanac() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
 				className: "sticky top-0 z-30 border-b border-line bg-parchment",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "#top",
-						className: "flex min-h-11 items-center gap-2",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, {
-							className: "size-5 text-leaf",
-							"aria-hidden": "true"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "font-display text-lg font-semibold tracking-tight",
-							children: "The Pepper Almanac"
-						})]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-						className: "flex items-center gap-1 text-sm font-semibold sm:gap-3",
+					className: "mx-auto max-w-6xl px-4",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "flex items-center py-3",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+							href: "#top",
+							className: "flex min-h-11 items-center gap-2",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, {
+								className: "size-5 text-leaf",
+								"aria-hidden": "true"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "font-display text-lg font-semibold tracking-tight",
+								children: "The Pepper Almanac"
+							})]
+						})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+						className: "-mx-4 flex gap-1 overflow-x-auto px-4 pb-3",
 						"aria-label": "Guide",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								className: "inline-flex min-h-11 items-center px-2 hover:text-chile-ink",
-								href: "#season",
-								children: "Season"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								className: "inline-flex min-h-11 items-center px-2 hover:text-chile-ink",
-								href: "#grow",
-								children: "Grow"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								className: "inline-flex min-h-11 items-center px-2 hover:text-chile-ink",
-								href: "#seed",
-								children: "Seed"
-							})
-						]
+						children: links.map(([href, label]) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href,
+							className: "inline-flex min-h-11 shrink-0 items-center px-3 text-sm font-semibold hover:text-chile-ink",
+							children: label
+						}, href))
 					})]
 				})
 			}),
@@ -1253,11 +1494,15 @@ function Almanac() {
 						className: "grid items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-xs font-semibold tracking-widest text-chile-ink uppercase",
-								children: "A field guide to Capsicum"
+								className: "max-w-xl text-lg font-semibold text-ink",
+								children: "The Education Revolution Pocket Guide, Volume 18: Peppers"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-1 text-base text-muted",
+								children: "by Blue and the Awesome Dudes"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-								className: "mt-3 text-5xl leading-tight font-semibold text-ink sm:text-6xl",
+								className: "mt-4 text-5xl leading-tight font-semibold text-ink sm:text-6xl",
 								children: "Grow peppers that ripen where you live."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -1373,7 +1618,7 @@ function Almanac() {
 								]
 							})
 						] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-							className: "overflow-hidden rounded-2xl border border-line bg-paper lg:sticky lg:top-24",
+							className: "overflow-hidden rounded-2xl border border-line bg-paper lg:sticky lg:top-32",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 								src: "/guide/hero.jpg",
 								alt: "Ripe bell, cayenne, jalapeño, and habanero peppers with a bowl of saved seeds",
@@ -1383,6 +1628,10 @@ function Almanac() {
 								children: "Ripe fruit for the kitchen. Fully colored, slightly soft fruit for the seed jar."
 							})]
 						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-20",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StartHere, {})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "mt-20",
@@ -1412,9 +1661,20 @@ function Almanac() {
 							onToggle: prefs.toggleCheck
 						})
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-20",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SafetyPages, {})
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-20",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BackPages, {})
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
 						className: "mt-16 border-t border-line pt-6 text-sm text-muted",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Frost dates are planning midpoints for each USDA zone, not a local forecast. Days to ripe color start at transplant and stretch when summers stay cool. Seed notes here are for a home garden, not certified seed production. A zone number does not describe summer heat — a cool zone 8 and a hot zone 8 are different pepper seasons." })
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Frost dates are planning midpoints for each USDA zone, not a local forecast. Days to ripe color start at transplant and stretch when summers stay cool. Seed notes here are for a home garden, not certified seed production. A zone number does not describe summer heat — a cool zone 8 and a hot zone 8 are different pepper seasons." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-3",
+							children: "Privacy: This guide does not collect your name, email, or any personal information. Your zone choice is saved only on your own device."
+						})]
 					})
 				]
 			})
