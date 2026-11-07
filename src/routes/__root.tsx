@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Peppers: The Pepper Almanac";
+const APP_NAME = "Volume 18: Peppers (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A field guide to growing peppers by climate zone, and to harvesting seed that comes true next year.",
+          "Volume 18 of The Education Revolution, by Blue and the Awesome Dudes. A field guide to growing peppers by climate zone, and to harvesting seed that comes true next year.",
       },
       { name: "theme-color", content: "#f3eee4" },
     ],
